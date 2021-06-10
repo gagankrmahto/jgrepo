@@ -1,0 +1,442 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>St. JG Public School || {% block title %}{% endblock title %}</title>	
+
+		<meta name="keywords" content="" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon" />
+
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'vendor/animate/animate.compat.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/simple-line-icons/css/simple-line-icons.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.theme.default.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/magnific-popup/magnific-popup.min.css' %}">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="{% static 'css/theme.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-elements.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-blog.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-shop.css' %}">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="{% static 'vendor/circle-flip-slideshow/css/component.css' %} ">
+			<!-- Current Demos CSS -->			
+		<link rel="stylesheet" href="{% static 'css/demos/demo.css' %} ">
+		<link rel="stylesheet" href="{% static 'vendor/rs-plugin/css/layers.html' %} ">
+		<link rel="stylesheet" href="{% static 'vendor/rs-plugin/css/navigation.html' %} ">
+		<link rel="stylesheet" href="{% static 'vendor/circle-flip-slideshow/css/component.css' %} ">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="{% static 'css/skins/default.css' %} ">
+		
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+		<!-- Head Libs -->
+		<script src="{% static 'vendor/modernizr/modernizr.min.js' %}"></script>
+		
+
+	</head>
+
+	<body>		
+		<div class="body">
+<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 45, 'stickySetTop': '-45px', 'stickyChangeLogo': true}">
+				<div class="header-body">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row"> <span class = "spinner-img"> <img class = "spinner" width="50" src="{% static 'img/logo.png' %}" data-sticky-top="25"> </span>
+									<div class="header-logo">	
+											<img class = "" alt="" width="220" height="60" data-sticky-width="160" data-sticky-height="40" data-sticky-top="10" src="{% static 'img/logo--slim.png' %} " style = "margin-top:20px;"> 
+									
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row pt-3">
+									<nav class="header-nav-top">
+										<ul class="nav nav-pills">
+											<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link pl-0" href="/fee_structure"><button type="button" class="btn btn-sm btn-primary" style = "margin-top:-10px; background-color:#26bce2;" ><i class='fas fa-rupee-sign faa-tada animated fa-1x'></i> Fee Structure</button></a>
+											</li>
+											<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link" href="/admin"><button type="button" class="btn btn-sm btn-success" style = "margin-top:-10px;"><i class="fas fa-sign-in-alt faa-wrench animated"></i>Admin Login</button></a>
+											</li>
+											<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link" href="#"><button type="button" class="btn btn-sm btn-tertiary" style = "margin-top:-10px;"><i class='fa fa-graduation-cap faa-wrench animated fa-4x'></i> Alumni</button></a>
+											</li>
+											<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link" href="mailto:info@stjgps.org"><button type="button" class="btn btn-sm btn-primary" style = "margin-top:-10px;"><i class="fas fa-envelope-open faa-wrench animated"></i> Mail Us</button></a>
+											</li>
+											<li class="nav-item nav-item-anim-icon d-none d-md-block">
+												<a class="nav-link" href="tel:+91 7903964053"><button type="button" class="btn btn-sm btn-primary" style = "margin-top:-10px;"><i class="fas fa-phone faa-wrench animated"></i> Call Us</button></a>
+											</li>
+										
+										</ul>
+										<ul class="header-social-icons social-icons d-none d-sm-block" style = "margin-top:-12px;">
+											<li class="social-icons-facebook"><a href="/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social-icons-twitter"><a href="/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+											<!-- <li class="social-icons-linkedin"><a href="/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li> -->
+										<li class="social-icons-youtube"><a href="/" target="_blank" title="youtube"><i class="fab fa-youtube-play"></i></a>
+											</li>
+											
+										</ul>
+									</nav>
+									
+				
+								</div>
+                                <div class="header-row">
+	<div class="header-nav pt-1">
+		<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
+			<nav class="collapse">
+				<ul class="nav nav-pills" id="mainNav">
+					<li class="dropdown dropdown-full-color dropdown-primary">
+						<a class="dropdown-item dropdown-toggle" href='/'>
+							Home
+						</a>
+					</li>
+
+					<li class="dropdown dropdown-full-color dropdown-primary">
+						<a class="dropdown-item dropdown-toggle">
+							About Us
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/aboutschool">About School</a></li>
+							<li><a class="dropdown-item" href="mission_statement.html">Mission Statement</a></li>
+							<li><a class="dropdown-item" target="_blank" href="/jagat-gyan-sarovar-society">Jagat Gyan Sarovar Society</a></li>
+
+							<li><a class="dropdown-item" href="/principal_message">Principal Message</a></li>
+							<li><a class="dropdown-item" href="/">Philosophy</a></li>
+							<li><a class="dropdown-item" href="/">School Song</a></li>
+							<li><a class="dropdown-item" href="/">School Prayers </a></li>
+							<li><a class="dropdown-item" href="/">Awards </a></li>
+							<li><a class="dropdown-item" href="/school_infrastructure">Infrastructure </a></li>
+						</ul>
+					</li>
+
+
+
+
+
+					<li class="dropdown dropdown-full-color dropdown-secondary">
+						<a class="dropdown-item dropdown-toggle" href="#">
+							Admission
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/admission_process">Admission Process</a></li>
+							<li><a class="dropdown-item" href="/fee_structure">Fee Structure</a></li>
+							<li><a class="dropdown-item" href="/list_of_holidays">List of holidays <span>
+										<!-- class="tip tip-dark">New</span></a></a></li> -->
+							<li><a class="dropdown-item" href="/withdrawal_rules">Withdrawal Rules</a></li>
+							<li><a class="dropdown-item" href="/amission_news">Admission News</a></li>
+							<li><a class="dropdown-item" href="/school_curriculum">School Curriculum</a></li>
+							<li><a class="dropdown-item" href="/academic_session">Academic Session</a></li>
+						</ul>
+					</li>
+					<li class="dropdown dropdown-full-color dropdown-tertiary">
+						<a class="dropdown-item dropdown-toggle" href="/faculty_info">
+							Academics
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/faculty_info">Faculty</a></li>
+							<li><a class="dropdown-item" href="/">Academic Schedule</a></li>
+							<li><a class="dropdown-item" href="/">Syllabus <span
+							<li><a class="dropdown-item" href="/">Book List</a></li>
+							<li><a class="dropdown-item" href="/">School Uniform</a></li>
+							<li><a class="dropdown-item" href="/">Guidelines For Student</a>
+							</li>
+							<li><a class="dropdown-item" href="/">School Policies </a></li>
+							<li><a class="dropdown-item" href="/">Holiday Homework </a></li>
+							<li><a class="dropdown-item" href="/">Examination Question/Answer
+									Papers </a></li>
+						</ul>
+					</li>
+					<li class="dropdown dropdown-full-color dropdown-tertiary">
+						<a class="dropdown-item dropdown-toggle" href="#">
+							Curriculum
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/">House System</a></li>
+							<li><a class="dropdown-item" href="/">School Club</a></li>
+							<li><a class="dropdown-item" href="/">Environmental Activities
+									
+							<li><a class="dropdown-item" href="/">Sports</a></li>
+							<li><a class="dropdown-item" href="/">Workshops</a></li>
+							<li><a class="dropdown-item" href="/">Special Assemblies</a></li>
+							<li><a class="dropdown-item" href="/">Centre for SAT </a></li>
+							<li><a class="dropdown-item" href="/">Community Services </a></li>
+						</ul>
+					</li>
+
+
+
+
+
+					<li class="dropdown dropdown-full-color dropdown-tertiary">
+						<a class="dropdown-item dropdown-toggle" href="#">
+							Facilities
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/transportation">Transportation</a></li>
+							<li><a class="dropdown-item" href="/">Play Ground</a></li>
+							<li><a class="dropdown-item" href="/">Labs</a></li>
+							<li><a class="dropdown-item" href="/">Career Counseling</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown dropdown-full-color dropdown-primary">
+						<a class="dropdown-item dropdown-toggle">
+							Gallery
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/">Photo Gallery</a></li>
+							<li><a class="dropdown-item" href="/">video Gallery</a></li>
+							<li><a class="dropdown-item" href="/">Media Gallery</a></li>
+							<li><a class="dropdown-item" href="/">Virtual Tour</a></li>
+							<li><a class="dropdown-item" href="/">Show Reel Video</a></li>
+							<!--<li><a class="dropdown-item" href="showreel_gallery.php">Showreel Video</a></li>-->
+						</ul>
+					</li>
+
+
+					<li class="dropdown dropdown-full-color dropdown-secondary">
+						<a class="dropdown-item dropdown-toggle" href="#">
+							Achievements
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/">Class XII Toppers</a></li>
+							<li><a class="dropdown-item" href="/">Class X Toppers</a></li>
+							<li><a class="dropdown-item" href="/">Intl/National
+								Awards</a></li>
+						</ul>
+					</li>
+
+
+					<li class="dropdown dropdown-full-color dropdown-tertiary">
+						<a class="dropdown-item dropdown-toggle" href="#">
+							SMC
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/">Our Secretary</a></li>
+							<li><a class="dropdown-item" href="/">Our MD</a></li>
+							<li><a class="dropdown-item" href="/">Our Principal</a></li>
+							<li><a class="dropdown-item" href="/">Student Council</a></li>
+							<li><a class="dropdown-item" href="/">Teacher Staff</a></li>
+							<li><a class="dropdown-item" href="/">Office Staff</a></li>
+						</ul>
+					</li>
+					<li class="dropdown dropdown-full-color dropdown-tertiary">
+						<a class="dropdown-item dropdown-toggle" href="#">
+							Alumni
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/">India</a></li>
+							<li><a class="dropdown-item" href="/">Abroad</a></li>
+							
+						</ul>
+					</li>
+
+
+
+
+
+				</ul>
+			</nav>
+		</div>
+
+		<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+			<i class="fas fa-bars"></i>
+		</button>
+	</div>
+</div>
+</div>
+</div>
+</div> <img src="{% static 'img/pages/home/yellow_line.png' %} " style="margin-bottom:-1px;" />
+</div>
+</header>
+{% block body %}
+{% endblock body %}
+
+
+			<footer id="footer">
+				<div class="container">
+					<div class="footer-ribbon">
+						<span>Reach Us</span>
+					</div>
+					<div class="row py-5 my-4">
+						<div class="col-md-4 mb-4 mb-lg-0">
+							<h5 class="text-5 mb-3">Get Our App</h5>	
+							<div class="image-gallery-item">
+										<a href="https://play.google.com/store/apps/details?id=tp.erpsoftware.eduware" target = "_blank" class="lightbox-portfolio">
+											<img src="{% static 'img/pages/google_play.png' %} " width = "150" class="img-fluid" alt="">
+										</a>
+									</div>
+							<!--
+									<div class="image-gallery-item">
+										<a href="https://itunes.apple.com/in/app/e-care-pro/id1435475202" target = "_blank" class="lightbox-portfolio">
+											<img src="img/pages/play_store.png" width = "150" class="img-fluid" alt="">
+										</a>
+										<a href="https://play.google.com/store/apps/details?id=com.franciscan.ecare_pro" target = "_blank" class="lightbox-portfolio">
+											<img src="img/pages/google_play.png" width = "150" class="img-fluid" alt="">
+										</a>
+									</div>
+							-->
+							<p class="mt-2 mb-2 text-color-light">Download the mobile app for St. Jagat Gyan Public School,Piska Nagri, Ranchi now to stay connected, parents can now access their child's all updates on mobile.it's a smart tool, a complete and comprehensive package which brings all e-Services at fingertips for all students</p>
+
+
+
+
+
+
+
+							</div>
+						
+
+							
+							
+<div>
+
+						
+							
+							
+						</div>
+					
+
+
+					<div class="col-md-5 mb-4 mb-lg-0">
+							<h5 class="text-5 mb-3 pb-1">CONTACT US</h5>
+							<p class="text-4 text-color-light font-weight-bold"> <a href="tel:+91 8210734645">+91 8210734645</a> <a href="tel:+91 9709838140">+91 9709838140</a><a href="tel:++91 7903964053">+91 7903964053</a></p>
+							<ul class="list list-icons list-icons-lg">
+							<li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:info@stjgps.org">info@stjgps.org</a></p></li>
+								<li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0 text-color-light">ST. Jagat Gyan Public School, Piska Nagri, Ranchi - 835303, Jharkhand - India</p></li>
+								<li class="mb-1">
+								
+								</li>
+								
+							</ul>
+							
+							
+							<p class="mb-2 pr-2 text-color-light"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.718595984519!2d85.18794001497339!3d23.32596668480024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e0ea31786563%3A0x4999f7e91b82e197!2sSt%20Jagat%20Gyan%20Sr.%20Secondary%20Public%20School!5e0!3m2!1sen!2sin!4v1622575743025!5m2!1sen!2sin"  height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+							
+							
+						</div>
+				
+					<div class="col-md-3 mb-4 mb-lg-0">
+							<h5 class="text-5 mb-3 pb-1">FOLLOW US</h5>
+							<ul class="footer-social-icons social-icons mt-4">
+								<li class="social-icons-facebook"><a href=" target="_blank" title="Facebook"><i class="fab fa-facebook-f text-2"></i></a></li>
+								<li class="social-icons-twitter"><a href="" target="_blank" title="Twitter"><i class="fab fa-twitter text-2"></i></a></li>
+								<li class="social-icons-linkedin"><a href="" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in" text-2"></i></a></li>
+							</ul>
+					<hr>		
+							 <div class="enter_code"> 
+							
+							
+					<h5 class="text-5 mb-3 pb-1">Important Links</h5>
+					<ul class=" list list-icons  text-3 text-light">
+
+ 					<li><a href="/legal_docs">Legal Docs</a></li>
+ 					<li><a href="www.cbse.nic.in">CBSE</a></li>
+ 					<li><a href="www.ncert.nic.in">NCERT</a></li>
+ 
+ 					</ul>
+							
+						</div>
+						</div>
+				
+
+
+				</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container py-2">
+						<div class="row py-4">
+							<div class="col-lg-1 d-flex align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
+								<a href="#" class="logo pr-0 pr-lg-3">
+									<img alt="" src="/" class="opacity-5" height="32">
+								</a>
+							</div>
+							<div class="col-lg-7 d-flex align-items-center justify-content-center justify-content-lg-start mb-4 mb-lg-0">
+								<p class "text-color-light">© Copyright <script>document.write( new Date().getFullYear() );</script>. All Rights Reserved.</p>
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<p class "text-color-light"><a href="https://www.linkedin.com/in/gagankrmahto/">Designed&hearts;By</a></p>
+							</div>
+							<div class="col-lg-4 d-flex align-items-center justify-content-center justify-content-lg-end">
+								<nav id="sub-menu">
+									<ul>
+										<li><i class="fas fa-angle-right"></i><a href="#" class="ml-1 text-decoration-none"> FAQ's</a></li>
+										<li><i class="fas fa-angle-right"></i><a href="#" class="ml-1 text-decoration-none"> Terms & Conditions</a></li>
+										<li><i class="fas fa-angle-right"></i><a href="/contact_us" class="ml-1 text-decoration-none"> Contact Us</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+				</div>
+		<!-- Vendor -->
+		<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+		<script src="{% static 'vendor/jquery.appear/jquery.appear.min.js' %}"></script>
+		<script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+		<script src="{% static 'vendor/jquery.cookie/jquery.cookie.min.js' %}"></script>
+		<script src="{% static 'vendor/popper/umd/popper.min.html' %}"></script>
+		<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'vendor/jquery.validation/jquery.validate.min.html' %}"></script>
+		<script src="{% static 'vendor/jquery.easy-pie-chart/jquery.easypiechart.min.html' %}"></script>
+		<script src="{% static 'vendor/jquery.gmap/jquery.gmap.min.html' %}"></script>
+		<script src="{% static 'vendor/lazysizes/lazysizes.min.js' %}"></script>
+		<script src="{% static 'vendor/isotope/jquery.isotope.min.js' %}"></script>
+		<script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+		<script src="{% static 'vendor/vide/jquery.vide.min.html' %}"></script>
+		<script src="{% static 'vendor/vivus/vivus.min.html' %}"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="{% static 'js/theme.js' %}"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="{% static 'vendor/circle-flip-slideshow/js/jquery.flipshow.min.js' %}"></script>
+		<script src="{% static 'js/views/view.home.js' %}"></script>
+
+		<!-- Theme Custom -->
+
+		<script src="{% static 'js/custom.js' %}"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="{% static 'js/theme.init.js' %}"></script>
+
+		<!-- Examples -->
+		<script src="{% static 'js/examples/examples.carousels.js' %}"></script>
+
+		
+	</body>
+
+
+</html>
+</html>
