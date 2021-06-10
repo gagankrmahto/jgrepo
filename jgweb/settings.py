@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-n_=j^luo0wro1uy1j*_0o-o#i@5_836q-65k9+qw#s_t*=r%y(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stjgps',
-    'storages',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +58,7 @@ ROOT_URLCONF = 'jgweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates','../templates','/srv/jgweb/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,7 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #  custom
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = 'static_gagan/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
 )
